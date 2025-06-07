@@ -48,7 +48,7 @@
 
             const images = Array.from({length: 26}, (_, i) => `images/PokerCardF${i+1}.png`);
             const alternateImages = Array.from({length: 26}, (_, i) => `images/PokerCard${i+1}.png`);
-            const audioFiles = Array.from({length: 26}, (_, i) => `audio/audio${i+1}.mp3`);
+            const audioFiles = Array.from({length: 26}, (_, i) => `audio/English/audio${i+1}.mp3`);
             const madrineAudio = Array.from({length: 26}, (_, i) => `audio/Madrine/audio${i+1}.mp3`);
             const lettersAudio = Array.from({length: 26}, (_, i) => `audio/letters/audio${i+1}.mp3`);
 
@@ -102,7 +102,6 @@
                 } else {
                     audio2.src = audioFiles[index];
                 }
-//                audio2.src = audioFiles[index];
 
                 audio1.play();
                 audio1.onended = function() {
